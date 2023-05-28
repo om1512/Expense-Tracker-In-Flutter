@@ -8,9 +8,12 @@ class ExpensesItem extends StatelessWidget {
   Widget build(context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
-        child: Column(children: [
-          Text(expense.title),
+        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Text(
+            expense.title,
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
           const SizedBox(
             height: 4,
           ),
